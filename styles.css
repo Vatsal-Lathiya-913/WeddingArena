@@ -1,0 +1,391 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+}
+
+.nav-links {
+    background: linear-gradient(60deg, #a10eea, #ee0665);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav-btns {
+    background: linear-gradient(60deg, #a10eea, #ee0665);
+    padding: 12px 12px 12px 12px;
+    border: none;
+}
+
+.nav-btns:hover {
+    background: linear-gradient(60deg, #9a12dc, #d70c65);
+}
+
+.nav-btns a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bg-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/bg_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(240, 233, 224);
+    height: 90vh;
+}
+
+.booking-form label {
+    font-weight: 450;
+    color: gray;
+    font-size: 14px;
+    padding: 4px 8px 4px 8px;
+}
+
+.booking-det {
+    font-size: 15px;
+    border: 2px solid rgb(187, 187, 187) !important;
+    border-radius: 10px !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.booking-det:focus {
+    border: 2.2px solid #e00a6c !important;
+}
+
+.book-btns input[type=submit] {
+    background: linear-gradient(100deg, #a512ee, #c6085e);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.book-btns input[type=submit]:focus {
+    transform: scale(0.8);
+}
+
+#guests option {
+    background-color: white !important;
+}
+
+#guests option:hover {
+    background-color: #d4085a !important;
+}
+
+.book-btns input[type=reset] {
+    background: linear-gradient(135deg, gray, lightsteelblue);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+
+@media (max-width: 768px) {
+    .bg-img {
+        height: 100vh;
+    }
+}
+
+.form-btn {
+    background-color: #f31075;
+    padding: 12px 12px 12px 12px;
+    border: none;
+    transition: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.form-btn:hover {
+    background-color: #ab0fd5;
+}
+
+.form-label {
+    font-size: 15px;
+}
+
+.form-selects {
+    padding: 8px 12px 12px 10px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    font-size: 15px;
+    width: 100%;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 10px;
+}
+
+.venue-det .btn {
+    background: linear-gradient(70deg, #d70c65);
+    color: white;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.venue-det .btn:hover {
+    color: white;
+}
+
+.venue-det .btn:active {
+    translate: 0 -5px;
+}
+
+.venue-form {
+    width: 50%;
+    height: auto;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .venue-form {
+        overflow: scroll;
+    }
+}
+
+.icon {
+    transition: all 0.3s ease; /* smooth transition */
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.icon.d-none {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+    pointer-events: none;
+}
+
+.venue-card {
+    transform: scale(0.9);
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.venue-card:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(0.910);
+}
+
+.package-title {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.package-grid {
+    display: grid;
+    justify-items: center;
+    gap: 15px;
+}
+
+.package-card-overlay {
+    background-color: #ffd2dc;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.package-content ul {
+    list-style-type: circle;
+}
+
+@media (max-width: 576px) {
+    .package-content ul li {
+        font-size: 13px;
+    }
+}
+
+.package-card-overlay:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 1.04;
+}
+
+@media (max-width: 600px) {
+    .package-card-overlay:hover {
+        transform: scale(1);
+    }
+}
+
+.package-image img {
+    height: 36vh;
+}
+
+@media (max-width: 768px) {
+    .package-items img {
+        height: auto;
+        width: auto;
+    }
+}
+
+.package-select-btn {
+    background: linear-gradient(100deg, #a512ee, #c6085e);
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.package-select-btn:active {
+    transform: scale(0.9);
+}
+
+.wedding-img {
+    width: 30%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.wedding-img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .wedding-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wedding-img {
+        width: auto;
+    }
+}
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.review {
+    width: 32%;
+    height: 240px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+}
+
+.review:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+}
+
+@media (max-width: 960px) {
+    .review {
+        width: 45%;
+        height: auto;
+    }
+}
+
+@media (max-width: 680px) {
+    .review {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.review-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(210, 210, 210);
+}
+
+.contact-info {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://thumbs.dreamstime.com/b/pastel-glowing-wedding-blurred-light-bokeh-background-soft-white-pink-lights-elegant-minimalist-design-festive-404021679.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info img {
+    background: linear-gradient(100deg, #910ed0, #c6085e);
+}
+
+.info span {
+    font-size: 15px;
+}
+
+.contact-form-container form label {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit-btn {
+    background: linear-gradient(60deg, #a10eea, #ee0665);
+    padding: 12px 12px 12px 12px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+.footer {
+    background: linear-gradient(175deg, oklch(0.381 0.176 304.987), oklch(0.291 0.149 302.717));
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fot-p1 {
+    width: 240px;
+}
+
+@media (max-width: 668px) {
+    .fot-p1 {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer-grid {
+        display: block;
+    }
+}
+
+.footer-section h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-link-item a {
+    color: #c9c9c9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
+
+.footer-link-item a:hover {
+    color: #d4085a;
+}

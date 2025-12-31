@@ -1,0 +1,24 @@
+{
+  "name": "weddingarena",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vatsal-Lathiya-913/WedArena.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vatsal-Lathiya-913/WedArena/issues"
+  },
+  "homepage": "https://github.com/Vatsal-Lathiya-913/WedArena#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}
